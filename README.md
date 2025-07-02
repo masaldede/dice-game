@@ -1,15 +1,22 @@
 # 🎲 Dice Game
 
 ## 🚀 Amaç  
-Bu proje, Python öğrenmeye yeni başlayanlar için yazılmış basit bir zar atma oyunudur. Kullanıcı tek veya çift zarla atış yapabilir. Komut satırında rastgelelik ve kullanıcı etkileşimini anlamak için idealdir.
+Bu proje, Python komutlarını öğrenmeye çalışanlar için yazılmış basit bir zar atma oyunudur. Kullanıcı tek veya çift zarla atış yapabilir. Komut satırı üzerinden seçim yaparak rastgele sayı üretimi ile etkileşim kurar.
 
 ## 🛠️ Kullanılan Teknolojiler  
-- Python 3.x  
-- `random` kütüphanesi (yerleşik)
+- Python 2.7  
+- `random` kütüphanesi
 
 ## 📸 Örnek Çıktı
-You rolled a 5!
-You rolled a 3 and 6! Total: 9
+
+–dice–
+for one dice press 1, for two dice press 2: 2
+[3, 6]
+try again?(yes or anything else)yes
+for one dice press 1, for two dice press 2: 1
+[4]
+try again?(yes or anything else)no
+thanks for playing!
 
 ## 📦 Kurulum
 ```bash
@@ -17,10 +24,14 @@ git clone https://github.com/masaldede/dice-game.git
 cd dice-game
 python dice.py
 
-from dice import roll_dice
-roll_dice(two_dice=True)
+Not: Python 3 kullanıyorsan print ve raw_input satırlarını güncellemen gerekebilir. (Python 3 uyumlu versiyon yakında eklenebilir.)
+
+💡 Kullanım Örneği
+# Terminalde çalıştırmak yeterlidir:
+python dice.py
 
 🗺️ Yol Haritası / Öğrendiklerim
-	•	random.randint() ile rastgele sayı üretme
-	•	Tek/çift zar mantığı ve fonksiyon yapısı
-	•	Bir sonraki adım: Basit arayüz (Tkinter/Streamlit) eklemek
+	•	random.randint() ile rastgele sayı üretimi
+	•	Liste mantığı ile çoklu zar kullanımı
+	•	Koşullu döngüler (while, if) ve kullanıcı girdisi alma
+	•	Bir sonraki adım: Python 3’e dönüştürmek ve arayüz eklemek
