@@ -1,15 +1,4 @@
 
-
-"""
-
-this is a trial to understand python commands better
-also a dice app will be usefull anytime :)
-best regards 
-
-Bahadir Sahin
-
-"""
-
 import random
 
 print "--dice--"
